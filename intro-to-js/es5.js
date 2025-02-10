@@ -1,7 +1,5 @@
 // var student = "Vangel"; // Global scope variable
 
-const { name } = require("ejs");
-
 // greet();
 
 // function greet() {
