@@ -6,11 +6,4 @@ class Person {
     this.name = name;
     this.age = age;
   }
-
-  introduce() {
-    console.log(`Hi, I am ${this.name} and I am ${this.age} years old`);
-  }
 }
-
-const john = new Person("John", 22);
-john.introduce();
