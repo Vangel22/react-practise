@@ -177,3 +177,17 @@ useCallback(
   (message) => console.log(message),
   (error) => console.log(`Error: ${error.name} ${error.message}`)
 );
+
+useCallback(successMessage, errorMessage);
+
+// Reference vs calling a function
+const newFun = useCallback;
+newFun();
+
+function successMessage(message) {
+  console.log(message);
+}
+
+function errorMessage(error) {
+  console.log(`Error: ${error.name} ${error.message}`);
+}
