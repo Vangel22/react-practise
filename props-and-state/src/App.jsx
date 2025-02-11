@@ -7,11 +7,28 @@ import LightSwitch from "./events/LightSwitch";
 import { Switch } from "./events/ColorSwitch";
 import { Counter } from "./components/Counter";
 import TodoList from "./components/TodoList";
+import { useEffect, useState } from "react";
+import { TrafficLight } from "./components/TrafficLight";
 
 function App() {
   const onSmash = () => {
     alert("Smashed");
   };
+
+  // const [movies, setMovies] = useState([]);
+
+  // component will render on every mount
+  // useEffect(() => {
+  // });
+
+  // component will render only on first mount
+  // useEffect(() => {},[])
+
+  // component will update on dependecy change
+  // useEffect(() => {}, [movies]);
+
+  // const ref = useRef();
+  // ref.current.focus();
 
   const todos = [
     {
@@ -41,7 +58,9 @@ function App() {
       {/* <LightSwitch /> */}
       {/* <Switch /> */}
       {/* <Counter /> */}
-      <TodoList todos={todos} />
+      {/* <TodoList todos={todos} /> */}
+      <TrafficLight />
+      {/* <input ref={ref} */}
     </>
   );
 }
