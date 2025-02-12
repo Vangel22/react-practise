@@ -25,7 +25,7 @@ function App() {
       {/* <LayoutRoutes /> */}
       {/* <ProtectedRoutes /> */}
       {/* <LazyRoutes /> */}
-      <QueryRoutes />
+      {/* <QueryRoutes /> */}
     </>
   );
 }
