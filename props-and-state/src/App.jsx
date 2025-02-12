@@ -9,6 +9,8 @@ import { Counter } from "./components/Counter";
 import TodoList from "./components/TodoList";
 import { useEffect, useState } from "react";
 import { TrafficLight } from "./components/TrafficLight";
+import Accordion from "./examples/Accordion";
+import { Messenger } from "./examples/Messenger";
 
 function App() {
   const onSmash = () => {
@@ -57,10 +59,12 @@ function App() {
     <>
       {/* <LightSwitch /> */}
       {/* <Switch /> */}
-      {/* <Counter /> */}
+      <Counter />
       {/* <TodoList todos={todos} /> */}
-      <TrafficLight />
+      {/* <TrafficLight /> */}
       {/* <input ref={ref} */}
+      {/* <Accordion /> */}
+      {/* <Messenger /> */}
     </>
   );
 }

@@ -12,12 +12,14 @@ export const Counter = () => {
           //   setCount(count);
           //   setCount((c) => c + 1);
           //   setCount(42);
-
-          setCount((prev) => prev + 1);
+          // setCount(count + 5);
+          // setCount(count + 5);
+          // setCount((prev) => prev + 5);
+          setCount((prev) => prev + 5);
           //   alert(count);
         }}
       >
-        Click me
+        + 5
       </button>
     </>
   );
