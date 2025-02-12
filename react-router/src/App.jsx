@@ -10,6 +10,11 @@ import { QueryRoutes } from "./browser-routes/query-routes";
 import { UserList } from "./components/UserList";
 
 function App() {
+  // Lazy route -> loading spinner then HorizontalCard(View more)
+  // Protected route - hide the HorizontalCard
+  // when pushToken is not present
+  // Nested routes - /post -> HorizontalCard ->  /post/wholepost
+
   return (
     <>
       {/* <h1>React router</h1> */}
