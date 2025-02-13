@@ -1,15 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useSelector } from "react-redux";
 import "./App.css";
-import { Tasks } from "./components/Tasks";
+import { Counter } from "./components/Counter";
+// import { Tasks } from "./components/Tasks";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counter.value);
 
   return (
     <>
-      <Tasks />
+      {/* <Tasks /> */}
+      <h1>Redux store</h1>
+      <Counter />
+      <h3>I am in app component: {count}</h3>
     </>
   );
 }
